@@ -1,0 +1,36 @@
+#main-screen {
+    font-family: Poppins;
+    padding: 1vh;
+    display: flex;
+    margin-top: 2vh;
+    font-size: 3vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.display-value {
+    margin-right: 1vh;
+}
+
+.screen-row {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    background-color: rgb(59, 59, 59);
+    color: rgb(227, 204, 0);
+    display: flex;
+    margin-bottom: 0.3vh;
+}
+
+#element-id {
+    margin-right: 1vh;
+}
+
+#main-input {
+    font-family: Poppins;
+    font-size: 2.5vh;
+    margin-top: 1vh;
+    height: 5vh;
+    width: 110vh;
+    padding: 1vh;
+}

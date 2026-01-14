@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import Statistics from './components/Statistics';
+import Screen from './components/Screen';
 import './App.css';
 
 function App() {
+  const [time, setTime] = useState(60);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <Statistics time={time} />
+        <Screen time={time} setTime={setTime} />
+      </div>
+    </>
   );
 }
 
